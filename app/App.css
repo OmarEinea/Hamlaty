@@ -6,3 +6,7 @@ body {
 .white * {
   color: #FAFAFA !important;
 }
+
+.black * {
+  color: #212121 !important;
+}
