@@ -11,7 +11,7 @@ export default class Home extends Component {
           backgroundSize: 'cover',
           backgroundPositionY: '80%',
           zIndex: -1}}/>
-        <Card style={{position: 'absolute', left: '50%', transform: 'translateX(-50%)', top: 200, padding: '8px 16px'}}>
+        <Card style={{opacity: .7, position: 'absolute', left: '50%', transform: 'translateX(-50%)', top: 200, padding: '8px 16px'}}>
           <Grid container alignItems="flex-end">
             <Grid item>
               <i class="fas fa-search" style={{margin: '0 8px 8px 0'}}></i>
@@ -22,8 +22,8 @@ export default class Home extends Component {
           </Grid>
         </Card>
         <Grid container justify="center">
-          <Grid container style={{maxWidth: 1024, padding: 24}}>
-            <Grid item sm="4" style={{padding: 16}}>
+          <Grid container justify="space-evenly" style={{maxWidth: 1024, padding: 24}}>
+            <Grid item sm="3" style={{padding: 16}}>
               <Link to="company" style={{textDecoration: 'none'}}>
                 <Grid container justify="center" alignItems="center" class="round">
                   <i class="fas fa-trophy" style={{fontSize: 100}}></i>
@@ -33,17 +33,17 @@ export default class Home extends Component {
                 </Typography>
               </Link>
             </Grid>
-            <Grid item sm="4" style={{padding: 16}}>
-              <Link to="company" style={{textDecoration: 'none'}}>
+            <Grid item sm="3" style={{padding: 16}}>
+              <Link to="reviews" style={{textDecoration: 'none'}}>
                 <Grid container justify="center" alignItems="center" class="round">
                   <i class="fas fa-pen" style={{fontSize: 100}}></i>
                 </Grid>
                 <Typography align="center" variant="headline" style={{padding: 24}}>
-                  Top Reviews
+                  Latest Reviews
                 </Typography>
               </Link>
             </Grid>
-            <Grid item sm="4" style={{padding: 16}}>
+            <Grid item sm="3" style={{padding: 16}}>
               <Link to="company" style={{textDecoration: 'none'}}>
                 <Grid container justify="center" alignItems="center" class="round">
                   <i class="fas fa-stopwatch" style={{fontSize: 100}}></i>

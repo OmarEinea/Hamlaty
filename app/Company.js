@@ -15,7 +15,7 @@ export default class Home extends Component {
               <Card style={{padding: 24}}>
                 <Grid container>
                   <Grid item sm="2">
-                    <div style={{width: 124, height: 124, backgroundImage: 'url(https://picsum.photos/124/124/?random)'}}/>
+                    <div style={{width: 124, height: 124, backgroundImage: `url(https://placeimg.com/124/124/arch/${this.props.match.params.id})`}}/>
                   </Grid>
                   <Grid item sm="8">
                     <Typography variant="headline">{company.name}</Typography>
@@ -72,7 +72,7 @@ export default class Home extends Component {
                   <li>Free wifi available</li>
                   <li>Room Types: 4 beds, 2 beds & Single bed</li>
                 </ul>
-                <img style={{maxWidth: '100%'}} src="https://pixabay.com/get/e83cb00821f51c3e95534204e74e4f96fe76e7d61ab3134393f1c2/tent-tops-191791.jpg"/>
+                <img style={{maxWidth: '100%'}} src="https://cdn.pixabay.com/photo/2016/04/15/11/45/hotel-1330841_1280.jpg"/>
               </Typography>
               <Typography component="div" style={{ padding: 8 * 3 }}>
                 <b>Buses</b>
