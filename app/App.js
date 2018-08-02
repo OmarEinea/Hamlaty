@@ -1,9 +1,10 @@
 import { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { HashRouter, Route } from 'react-router-dom';
-import { AppBar, Toolbar, Typography, Button, Grid, Input, Card } from 'material-ui';
+import { AppBar, Toolbar, Typography, Button, Grid, TextField, Card } from 'material-ui';
 import Home from './Home';
 import Company from './Company';
+import TopCompanies from './TopCompanies';
 import './App.css';
 
 class App extends Component {
@@ -20,7 +21,8 @@ class App extends Component {
           </Toolbar>
         </AppBar>
         <Route exact path="/" component={Home}/>
-        <Route path="/company" component={Company}/>
+        <Route exact path="/company" component={TopCompanies}/>
+        <Route path="/company/:id" component={Company}/>
         <Grid container justify="center" style={{backgroundColor: '#90A4AE'}}>
           <Grid container style={{maxWidth: 1024}} class="white">
             <Grid item sm="4" style={{padding: 16}}>

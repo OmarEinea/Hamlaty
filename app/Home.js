@@ -9,7 +9,8 @@ export default class Home extends Component {
         <div style={{width: '100%', height: 400,
           background: 'url(https://pixabay.com/get/ef33b8072de91c66d95d4404e445468be272e1d618b518459cf0/mecca-66985.jpg)',
           backgroundSize: 'cover',
-          backgroundPositionY: '80%'}}/>
+          backgroundPositionY: '80%',
+          zIndex: -1}}/>
         <Card style={{position: 'absolute', left: '40%', top: 200, padding: '8px 16px'}}>
           <Grid container alignItems="flex-end">
             <Grid item>
