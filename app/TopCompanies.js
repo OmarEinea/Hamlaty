@@ -2,11 +2,13 @@ import { Component } from 'react';
 import { Typography, Grid, Card, Tabs, Tab, Paper } from 'material-ui';
 import { Link } from 'react-router-dom';
 import companies from './companies.json';
+import 'fetch';
 
 export default class Home extends Component {
   state = {value: 0};
   componentWillMount() {
-    this.companies = Object.entries(companies).sort((a, b) => b[1].rating - a[1].rating);
+    this.companies = Object.entries(companies).slice(0, 10).sort((a, b) => b[1].rating - a[1].rating);
+    fetch('https://placeimg.com/124/124/arch').then(data => data.text()).then(data => console.log(data));
   }
 
   render() {
@@ -20,14 +22,14 @@ export default class Home extends Component {
                   <Card style={{padding: 24, margin: 16}}>
                     <Grid container>
                       <Grid item sm="2">
-                        <div style={{width: 124, height: 124, backgroundColor: 'lightgrey'}}/>
+                        <div style={{width: 124, height: 124, backgroundImage: 'url(https://placeimg.com/124/124/arch)'}}/>
                       </Grid>
                       <Grid item sm="8">
                         <Typography variant="headline">{company.name}</Typography>
-                        <Typography variant="subheading"><b>Manager:</b> {company.manager}</Typography>
-                        <Typography variant="subheading"><b>City:</b> {company.city}</Typography>
-                        <Typography variant="subheading"><b>Phone:</b> {company.tel}</Typography>
-                        <Typography variant="subheading"><b>Email:</b> {company.email}</Typography>
+                        <Typography variant="subheading"><b class="grey"><i class="fas fa-fw fa-user"></i> Manager:</b> {company.manager}</Typography>
+                        <Typography variant="subheading"><b class="grey"><i class="fas fa-fw fa-map-marker"></i> City:</b> {company.city}</Typography>
+                        <Typography variant="subheading"><b class="grey"><i class="fas fa-fw fa-phone"></i> Phone:</b> {company.tel}</Typography>
+                        <Typography variant="subheading"><b class="grey"><i class="fas fa-fw fa-envelope"></i> Email:</b> {company.email}</Typography>
                       </Grid>
                       <Grid item sm="2">
                         <Typography variant="headline">Rating {company.rating}/5</Typography>

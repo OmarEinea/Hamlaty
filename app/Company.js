@@ -9,18 +9,20 @@ export default class Home extends Component {
     const company = companies[this.props.match.params.id];
     return (
       <div>
-        <div style={{height: 400, backgroundColor: 'lightgrey',
-          background: 'url()',
-          backgroundSize: 'cover',
-          backgroundPositionY: '80%',
-          zIndex: -1}}/>
         <Grid container justify="center">
           <Grid container style={{maxWidth: 1024, padding: 24}}>
             <Grid item sm="12" style={{paddingBottom: 16}}>
               <Card style={{padding: 24}}>
                 <Grid container>
-                  <Grid item sm="10">
+                  <Grid item sm="2">
+                    <div style={{width: 124, height: 124, backgroundImage: 'url(https://picsum.photos/124/124/?random)'}}/>
+                  </Grid>
+                  <Grid item sm="8">
                     <Typography variant="headline">{company.name}</Typography>
+                    <Typography variant="subheading"><b class="grey"><i class="fas fa-fw fa-user"></i> Manager:</b> {company.manager}</Typography>
+                    <Typography variant="subheading"><b class="grey"><i class="fas fa-fw fa-map-marker"></i> City:</b> {company.city}</Typography>
+                    <Typography variant="subheading"><b class="grey"><i class="fas fa-fw fa-phone"></i> Phone:</b> {company.tel}</Typography>
+                    <Typography variant="subheading"><b class="grey"><i class="fas fa-fw fa-envelope"></i> Email:</b> {company.email}</Typography>
                   </Grid>
                   <Grid item sm="2">
                     <Typography variant="headline">Rating {company.rating}/5</Typography>
@@ -39,10 +41,9 @@ export default class Home extends Component {
                 centered
               >
                 <Tab label="Package Offering" />
+                <Tab label="Accommodation" />
+                <Tab label="Transportation" />
                 <Tab label="Top Reviews" />
-                <Tab label="Item Three" />
-                <Tab label="Item four" />
-                <Tab label="Item five" />
               </Tabs>
             </Paper>
             <SwipeableViews style={{backgroundColor: 'white', width: '100%', zIndex: -1}}
@@ -52,13 +53,82 @@ export default class Home extends Component {
               }}
             >
               <Typography component="div" style={{ padding: 8 * 3 }}>
-                Item one
+                <ul>
+                  <li>Arrange accommodation at reduced price in 5-star, 4-star and 3-star hotels close to the Haram al-Sharif and the city</li>
+                  <li>Special services for business executives and VIP customers</li>
+                  <li>Airport meet and assist services at discounted prices on request</li>
+                  <li>Booking air and land transportation</li>
+                  <li>Provision of guides for pilgrims during the performance of religious rites and rituals</li>
+                  <li>Provision of convenient transportation services to all places of ritual</li>
+                  <li>Provision of trips to Islamic and historic sites upon request</li>
+                  <li>Provision of medical services during the trips</li>
+                  <li>Insurance for students and companies</li>
+                  <li>Special rates for groups, companies and hospitals</li>
+                </ul>
               </Typography>
               <Typography component="div" style={{ padding: 8 * 3 }}>
-                Item two
+                <ul>
+                  <li>Buildings: Al Kaif Building</li>
+                  <li>Free wifi available</li>
+                  <li>Room Types: 4 beds, 2 beds & Single bed</li>
+                </ul>
+                <img style={{maxWidth: '100%'}} src="https://pixabay.com/get/e83cb00821f51c3e95534204e74e4f96fe76e7d61ab3134393f1c2/tent-tops-191791.jpg"/>
               </Typography>
               <Typography component="div" style={{ padding: 8 * 3 }}>
-                Item three
+                <b>Buses</b>
+                <img style={{maxWidth: '100%'}} src="https://pixabay.com/get/ea37b1092bf6073ecd1f4c02e74d449fe36ae3d01ab2134397f7c379/coach-3206326.png"/>
+              </Typography>
+              <Typography component="div" style={{ padding: 8 * 3 }}>
+                <div style={{padding: 24, borderBottom: 'solid lightgrey 1px', borderTop: 'solid lightgrey 1px'}}>
+                  <Grid container>
+                    <Grid item sm="2">
+                      <div style={{width: 124, height: 124, backgroundImage: 'url(https://picsum.photos/124/124/?random)'}}/>
+                    </Grid>
+                    <Grid item sm="8">
+                      <Typography variant="headline">Ahmed Khalid</Typography>
+                      <Typography variant="subheading">The overall support and guidance from the service agent was amazing.
+From day 01 till the end he guided and taught us. Everything was provided as shown in pictures. 
+The Hotel staff and bus staff was friendly too.
+</Typography>
+                    </Grid>
+                    <Grid item sm="2">
+                      <Typography variant="headline">Rating 4/5</Typography>
+                    </Grid>
+                  </Grid>
+                </div>
+                <div style={{padding: 24, borderBottom: 'solid lightgrey 1px'}}>
+                  <Grid container>
+                    <Grid item sm="2">
+                      <div style={{width: 124, height: 124, backgroundImage: 'url(https://picsum.photos/124/124/?random)'}}/>
+                    </Grid>
+                    <Grid item sm="8">
+                      <Typography variant="headline">Mansoor Ali</Typography>
+                      <Typography variant="subheading">Did not really like the hotel arrangement as i had olderly people with me. I had asked well in 
+advance to get me a room thats easily accessible. But i was given a room on the 8th floor. Buses service
+is appreciateable. Would have given 4 stars if accomodation was arranged as asked.
+</Typography>
+                    </Grid>
+                    <Grid item sm="2">
+                      <Typography variant="headline">Rating 2.5/5</Typography>
+                    </Grid>
+                  </Grid>
+                </div>
+                <div style={{padding: 24, borderBottom: 'solid lightgrey 1px'}}>
+                  <Grid container>
+                    <Grid item sm="2">
+                      <div style={{width: 124, height: 124, backgroundImage: 'url(https://picsum.photos/124/124/?random)'}}/>
+                    </Grid>
+                    <Grid item sm="8">
+                      <Typography variant="headline">Yousuf Al Mazmi</Typography>
+                      <Typography variant="subheading">Not a great experience. Hotel room was not provided as promised. I has paid for a single room 
+but was given a double room due to availablity. Poor management by the company. Also the tents weren't 
+as good as promised.</Typography>
+                    </Grid>
+                    <Grid item sm="2">
+                      <Typography variant="headline">Rating 1/5</Typography>
+                    </Grid>
+                  </Grid>
+                </div>
               </Typography>
             </SwipeableViews>
           </Grid>

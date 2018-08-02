@@ -1,7 +1,7 @@
 import { Component } from 'react';
 import ReactDOM from 'react-dom';
-import { HashRouter, Route } from 'react-router-dom';
-import { AppBar, Toolbar, Typography, Button, Grid, TextField, Card } from 'material-ui';
+import { HashRouter, Route, Link } from 'react-router-dom';
+import { AppBar, Toolbar, Typography, Button, Grid } from 'material-ui';
 import Home from './Home';
 import Company from './Company';
 import TopCompanies from './TopCompanies';
@@ -11,10 +11,10 @@ class App extends Component {
   render() {
     return (
       <div>
-        <AppBar position="static" class="black" style={{backgroundColor: '#9E9D24'}}>
+        <AppBar position="static" class="black" style={{backgroundColor: '#9E9D24', boxShadow: 'unset'}}>
           <Toolbar>
             <Typography variant="title" color="inherit" style={{flex: 1, fontFamily: 'Baloo Bhaijaan'}}>
-              حـمـلـتـي
+              <Link to="/">حـمـلـتـي</Link>
             </Typography>
             <Button color="inherit"><b>Login</b></Button>
             <Button color="inherit"><b>Signup</b></Button>

@@ -10,3 +10,14 @@ body {
 .black * {
   color: #212121 !important;
 }
+
+.grey, .grey * {
+  color: #424242 !important;
+}
+
+.round {
+  color: #90A4AE;
+  border-radius: 50%;
+  background-color: #CFD8DC;
+  height: 293px;
+}

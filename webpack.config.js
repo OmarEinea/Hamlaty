@@ -26,7 +26,9 @@ module.exports = (_, { mode }) => {
     },
     resolve: {
       alias: {
-        'material-ui': '@material-ui/core'
+        'material-ui': '@material-ui/core',
+        'fetch': 'whatwg-fetch'
+
       }
     }
   };
