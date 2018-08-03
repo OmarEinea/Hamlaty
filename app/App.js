@@ -14,11 +14,15 @@ class App extends Component {
       <div>
         <AppBar position="static" class="black" style={{backgroundColor: '#9E9D24', boxShadow: 'unset'}}>
           <Toolbar>
-            <Typography variant="title" color="inherit" style={{flex: 1, fontFamily: 'Baloo Bhaijaan'}}>
-              <Link to="/">حـمـلـتـي</Link>
-            </Typography>
-            <Button color="inherit"><b>Login</b></Button>
-            <Button color="inherit"><b>Signup</b></Button>
+            <Grid container justify="center">
+              <Grid container style={{maxWidth: 960}}>
+                <Typography variant="title" color="inherit" style={{flex: 1, fontFamily: 'Baloo Bhaijaan'}}>
+                  <Link to="/" style={{lineHeight: '32px', fontSize: '26px'}}>Hamlaty</Link>
+                </Typography>
+                <Button color="inherit" style={{border: 'solid black 1px', marginRight: 8}}><b>Login</b></Button>
+                <Button color="inherit" style={{border: 'solid black 1px'}}><b>Signup</b></Button>
+              </Grid>
+            </Grid>
           </Toolbar>
         </AppBar>
         <Route exact path="/" component={Home}/>

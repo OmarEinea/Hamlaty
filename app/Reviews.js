@@ -16,7 +16,7 @@ export default class Home extends Component {
       <Card style={{marginBottom: 24, padding: 24}}>
         <Grid container>
           <Grid item sm="2">
-            <div style={{width: 124, height: 124, backgroundImage: 'url(https://placeimg.com/124/124/people/1)'}}/>
+            <div style={{width: 124, height: 124, backgroundImage: 'url(1.jpg)'}}/>
           </Grid>
           <Grid item sm="8">
             <Typography variant="headline">Ahmed Khalid</Typography>
@@ -33,7 +33,7 @@ The Hotel staff and bus staff was friendly too.
       <Card style={{marginBottom: 24, padding: 24}}>
         <Grid container>
           <Grid item sm="2">
-            <div style={{width: 124, height: 124, backgroundImage: 'url(https://placeimg.com/124/124/people/2)'}}/>
+            <div style={{width: 124, height: 124, backgroundImage: 'url(2.jpg)'}}/>
           </Grid>
           <Grid item sm="8">
             <Typography variant="headline">Mansoor Ali</Typography>
@@ -50,7 +50,7 @@ is appreciateable. Would have given 4 stars if accomodation was arranged as aske
       <Card style={{padding: 24, marginBottom: 24}}>
         <Grid container>
           <Grid item sm="2">
-            <div style={{width: 124, height: 124, backgroundImage: 'url(https://placeimg.com/124/124/people/3)'}}/>
+            <div style={{width: 124, height: 124, backgroundImage: 'url(3.jpg)'}}/>
           </Grid>
           <Grid item sm="8">
             <Typography variant="headline">Yousuf Al Mazmi</Typography>

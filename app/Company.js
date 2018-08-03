@@ -72,17 +72,17 @@ export default class Home extends Component {
                   <li>Free wifi available</li>
                   <li>Room Types: 4 beds, 2 beds & Single bed</li>
                 </ul>
-                <img style={{maxWidth: '100%'}} src="https://cdn.pixabay.com/photo/2016/04/15/11/45/hotel-1330841_1280.jpg"/>
+                <img style={{maxWidth: '100%'}} src="hotel.jpg"/>
               </Typography>
               <Typography component="div" style={{ padding: 8 * 3 }}>
                 <b>Buses</b>
-                <img style={{maxWidth: '100%'}} src="https://pixabay.com/get/ea37b1092bf6073ecd1f4c02e74d449fe36ae3d01ab2134397f7c379/coach-3206326.png"/>
+                <img style={{maxWidth: '100%'}} src="bus.png"/>
               </Typography>
               <Typography component="div" style={{ padding: 8 * 3 }}>
                 <div style={{padding: 24, borderBottom: 'solid lightgrey 1px', borderTop: 'solid lightgrey 1px'}}>
                   <Grid container>
                     <Grid item sm="2">
-                      <div style={{width: 124, height: 124, backgroundImage: 'url(https://picsum.photos/124/124/?random)'}}/>
+                      <div style={{width: 124, height: 124, backgroundImage: 'url(1.jpg)'}}/>
                     </Grid>
                     <Grid item sm="8">
                       <Typography variant="headline">Ahmed Khalid</Typography>
@@ -99,7 +99,7 @@ The Hotel staff and bus staff was friendly too.
                 <div style={{padding: 24, borderBottom: 'solid lightgrey 1px'}}>
                   <Grid container>
                     <Grid item sm="2">
-                      <div style={{width: 124, height: 124, backgroundImage: 'url(https://picsum.photos/124/124/?random)'}}/>
+                      <div style={{width: 124, height: 124, backgroundImage: 'url(2.jpg)'}}/>
                     </Grid>
                     <Grid item sm="8">
                       <Typography variant="headline">Mansoor Ali</Typography>
@@ -116,7 +116,7 @@ is appreciateable. Would have given 4 stars if accomodation was arranged as aske
                 <div style={{padding: 24, borderBottom: 'solid lightgrey 1px'}}>
                   <Grid container>
                     <Grid item sm="2">
-                      <div style={{width: 124, height: 124, backgroundImage: 'url(https://picsum.photos/124/124/?random)'}}/>
+                      <div style={{width: 124, height: 124, backgroundImage: 'url(3.jpg)'}}/>
                     </Grid>
                     <Grid item sm="8">
                       <Typography variant="headline">Yousuf Al Mazmi</Typography>
